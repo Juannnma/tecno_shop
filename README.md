@@ -12,11 +12,7 @@
 
 # Website
 
-[Mirá aquí La Tienda On line](https://lauriacunia.github.io/ShopLau/)
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/63796774/90157833-9a18b500-dd64-11ea-8b64-99d2392e3540.png">
-</p>
+[Mirá aquí TECNO SHOP](https://tecno-shop-ph9j.onrender.com)
 
 ## Testeo de accesibilidad realizado con…
 - [x] https://www.tawdis.net/
