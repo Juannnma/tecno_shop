@@ -350,14 +350,190 @@ button {
 
 /*☆☆.｡.:*･ﾟ*:.｡.☆☆.｡.:*･ﾟ*:.   Inicio FOOTER   .｡.☆☆.｡.:*･ﾟ*:.｡.☆☆*/
 .footer-main {
-	padding: 50px 0px;
+	padding: 60px 0 20px 0;
 	margin-top: 80px;
+	background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
 }
-.logo {
-	width: 30px;
+
+.footer-content {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 40px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.footer-section h3 {
+	color: #ecf0f1;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+	font-weight: 600;
+	position: relative;
+}
+
+.footer-section h3::after {
+	content: '';
+	position: absolute;
+	bottom: -8px;
+	left: 0;
+	width: 40px;
+	height: 3px;
+	background: linear-gradient(90deg, #3498db, #2980b9);
+	border-radius: 2px;
+}
+
+/* Logo y Descripción */
+.footer-logo-container {
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.footer-logo {
+	width: 35px;
 	height: auto;
-	margin-right: 10px;
+	margin-right: 12px;
 }
+
+.footer-logo-container h3 {
+	margin-bottom: 0;
+}
+
+.footer-description {
+	color: #bdc3c7;
+	line-height: 1.6;
+	max-width: 280px;
+}
+
+/* Enlaces Útiles */
+.footer-links {
+	list-style: none;
+}
+
+.footer-links li {
+	margin-bottom: 12px;
+}
+
+.footer-links a {
+	color: #bdc3c7;
+	transition: all 0.3s ease;
+	position: relative;
+	padding-left: 15px;
+}
+
+.footer-links a::before {
+	content: '→';
+	position: absolute;
+	left: 0;
+	color: #3498db;
+	transition: transform 0.3s ease;
+}
+
+.footer-links a:hover {
+	color: #3498db;
+	transform: translateX(5px);
+}
+
+.footer-links a:hover::before {
+	transform: translateX(3px);
+}
+
+/* Información de Contacto */
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.contact-item {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.contact-item i {
+	color: #3498db;
+	font-size: 1.1em;
+	width: 20px;
+	text-align: center;
+}
+
+.contact-item a {
+	color: #bdc3c7;
+	transition: color 0.3s ease;
+	word-break: break-all;
+}
+
+.contact-item a:hover {
+	color: #3498db;
+}
+
+/* Redes Sociales */
+.social-links {
+	display: flex;
+	gap: 15px;
+}
+
+.social-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 45px;
+	height: 45px;
+	background: linear-gradient(135deg, #3498db, #2980b9);
+	color: white;
+	border-radius: 50%;
+	transition: all 0.3s ease;
+	font-size: 1.2em;
+}
+
+.social-link:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+	background: linear-gradient(135deg, #2980b9, #1f5f8b);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+	margin-top: 40px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.footer-divider {
+	height: 1px;
+	background: linear-gradient(90deg, transparent, #bdc3c7, transparent);
+	margin-bottom: 20px;
+}
+
+.footer-copyright {
+	color: #95a5a6;
+	font-size: 0.9em;
+	line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.footer-content {
+		grid-template-columns: 1fr;
+		gap: 30px;
+		padding: 0 15px;
+	}
+	
+	.footer-section {
+		text-align: center;
+	}
+	
+	.footer-section h3::after {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	
+	.social-links {
+		justify-content: center;
+	}
+}
+
 /*☆☆.｡.:*･ﾟ*:.｡.☆☆.｡.:*･ﾟ*:.   Fin FOOTER   .｡.☆☆.｡.:*･ﾟ*:.｡.☆☆*/
 
 
